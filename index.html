@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collage para Itzel</title>
+    <link rel="stylesheet" href="index.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var audio = new Audio('musica.mp3');
+            audio.autoplay = true;
+            audio.loop = true;
+            audio.play().catch(function(error) {
+                console.log('No se pudo reproducir el audio:', error);
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="collage-container">
+        <div class="collage">
+            <div class="foto" id="foto1">
+                <img src="1.jpg" alt="Mi niña Itzel">
+                <p class="mensaje">Mi niña, la más dulce de todas.</p>
+            </div>
+            <div class="foto" id="foto2">
+                <img src="2.jpg" alt="Mi reina Itzel">
+                <p class="mensaje">Mi reina, la que gobierna mi corazón.</p>
+            </div>
+            <div class="foto" id="foto3">
+                <img src="3.jpg" alt="Mi novia Itzel">
+                <p class="mensaje">Mi novia, la razón de mi felicidad.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="hearth"></div>
+    <div class="contenido"><h1>Te amo My Metalera</h1></div>
+    <div class="container">
+        <h1>En el Metal de Mi Corazón</h1>
+        <p>
+            En la oscuridad de un riff poderoso,<br>
+            donde el metal enciende su luz,<br>
+            encuentro la fuerza en tu abrazo,<br>
+            mi amor, mi eterna musa.
+        </p>
+        <p>
+            Tu espíritu es un trueno indomable,<br>
+            en la tormenta de cada canción,<br>
+            tu pasión resuena, imparable,<br>
+            como un solo de guitarra en la emoción.
+        </p>
+        <p>
+            Entre acordes pesados y letras profundas,<br>
+            descubro la esencia de tu ser,<br>
+            en cada grito y cada nota,<br>
+            encuentro el amor que me hace renacer.
+        </p>
+        <p>
+            Eres el eco de mi melodía,<br>
+            la fuerza detrás de cada verso,<br>
+            en la sinfonía de nuestra vida,<br>
+            eres mi metal, mi eterno universo.
+        </p>
+        <p>
+            Para ti, mi <span class="highlight">reina del metal</span>,<br>
+            mi amor, mi eterna verdad,<br>
+            en cada riff y cada grito,<br>
+            te amo con intensidad.
+        </p>
+    </div>
+</body>
+</html>
+

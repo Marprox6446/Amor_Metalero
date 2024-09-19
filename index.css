@@ -1,0 +1,100 @@
+body {
+    background-color: #f0f8ff;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-image: url('rock2.0.png'); /* Reemplaza con la ruta de tu imagen */
+    background-size: cover; /* Ajusta el tamaño para cubrir toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-attachment: fixed; /* Hace que el fondo se mantenga fijo al hacer scroll */
+}
+
+.collage-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.collage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.foto {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    width: 220px;
+    height: 320px;
+    border-radius: 15px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.foto img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    animation: fadeIn 2s ease;
+}
+
+.foto p.mensaje {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.foto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.foto:hover p.mensaje {
+    opacity: 1;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.container {
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 600px;
+    border: 2px solid #ff0000; /* Borde rojo para resaltar el poema */
+    border-radius: 10px;
+    background-color: #585757; /* Fondo gris oscuro para el poema */
+}
+h1 {
+    color: #ff0000; /* Título en rojo */
+}
+p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+.highlight {
+    color: #00bfff; /* Resaltado en azul cielo */
+    font-weight: bold;
+}
